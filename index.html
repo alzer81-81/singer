@@ -10,14 +10,15 @@
     <div class="page">
       <header class="hero" id="home">
         <nav class="nav">
-          <div class="logo">The Final Singers</div>
+          <div class="logo">
+            <img src="lo.png" alt="The Final Singers logo" />
+          </div>
           <div class="nav-links">
             <a href="#services">Services</a>
             <a href="#media">Listen</a>
             <a href="#story">About</a>
             <a href="#contact">Contact</a>
           </div>
-          <a class="nav-cta" href="#contact">Inquire</a>
         </nav>
 
         <div class="hero-content">
@@ -46,23 +47,17 @@
             </div>
           </div>
           <div class="hero-portrait" aria-label="Singer portraits">
-            <div class="portrait-frame duo">
-              <div class="portrait">
-                <img
-                  src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=900&q=80"
-                  alt="Ann-Marie Power portrait"
-                />
-                <div class="portrait-caption">
+            <div class="duo-showcase">
+              <div class="duo-photo">
+                <img src="laura.png" alt="Ann-Marie Power portrait" />
+                <div class="duo-caption">
                   <span>Ann-Marie Power</span>
-                  <span>Soprano • Cantor</span>
+                  <span>Vocalist • Cantor</span>
                 </div>
               </div>
-              <div class="portrait">
-                <img
-                  src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=900&q=80"
-                  alt="Laura Kenrick portrait"
-                />
-                <div class="portrait-caption">
+              <div class="duo-photo">
+                <img src="annmarie.png" alt="Laura Kenrick portrait" />
+                <div class="duo-caption">
                   <span>Laura Kenrick</span>
                   <span>Soprano • Ensemble lead</span>
                 </div>
@@ -131,36 +126,31 @@
             <div class="media-card">
               <div class="media-frame">
                 <img
-                  src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=80"
-                  alt="Singer at church"
+                  src="https://images.unsplash.com/photo-1504052434569-70ad5836ab65?auto=format&fit=crop&w=900&q=80"
+                  alt="Choir loft in a church"
                 />
-                <button class="play" type="button">Play</button>
+                <button class="play" type="button" data-audio="songbird.mp3">Play</button>
               </div>
               <div class="media-meta">
-                <h3>“Ave Maria” Live</h3>
-                <p>
-                  Recorded in a stone cathedral with natural reverberation.
-                </p>
+                <h3>“Songbird”</h3>
+                <p>Soft, reflective vocals with gentle accompaniment.</p>
               </div>
             </div>
             <div class="media-card">
               <div class="media-frame">
                 <img
-                  src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=900&q=80"
-                  alt="Singer with sheet music"
+                  src="https://images.unsplash.com/photo-1482192505345-5655af888cc4?auto=format&fit=crop&w=900&q=80"
+                  alt="Church interior with organ and nave"
                 />
-                <button class="play" type="button">Play</button>
+                <button class="play" type="button" data-audio="fields-of-gold.mp3">Play</button>
               </div>
               <div class="media-meta">
-                <h3>Psalm Setting</h3>
-                <p>Gentle, clear, and prayerful for communion.</p>
+                <h3>“Fields of Gold”</h3>
+                <p>Warm, timeless tone suited to sacred ceremonies.</p>
               </div>
             </div>
+            <audio id="sample-audio" preload="metadata"></audio>
           </div>
-          <p class="note">
-            Replace these preview images and connect your audio or video links
-            later. The layout is ready for embedded media.
-          </p>
         </section>
 
         <section class="section" id="story">
@@ -191,7 +181,7 @@
             </div>
             <div class="story-image">
               <img
-                src="https://images.unsplash.com/photo-1464375117522-1311dd7a0b8a?auto=format&fit=crop&w=900&q=80"
+                src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1200&q=80"
                 alt="Church interior"
               />
               <div class="story-card">

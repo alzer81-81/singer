@@ -17,9 +17,25 @@ revealElements.forEach((el) => {
 });
 
 const playButtons = document.querySelectorAll(".play");
+const sampleAudio = document.getElementById("sample-audio");
+
 playButtons.forEach((button) => {
-  button.addEventListener("click", () => {
-    button.textContent = "Preview";
-    button.classList.toggle("active");
+  button.addEventListener("click", async () => {
+    const audioSrc = button.dataset.audio;
+
+    if (!audioSrc || !sampleAudio) {
+      button.textContent = "Preview";
+      button.classList.toggle("active");
+      return;
+    }
+
+    if (sampleAudio.paused) {
+      sampleAudio.src = audioSrc;
+      await sampleAudio.play();
+      button.textContent = "Pause";
+    } else {
+      sampleAudio.pause();
+      button.textContent = "Play";
+    }
   });
 });
