@@ -217,17 +217,24 @@ h3 {
   padding: 1.5rem;
   border-radius: var(--radius);
   box-shadow: var(--shadow);
-  max-width: 420px;
+  max-width: 520px;
 }
 
-.portrait-frame img {
+.portrait-frame.duo {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.2rem;
+}
+
+.portrait img {
   border-radius: calc(var(--radius) - 10px);
-  height: 460px;
+  height: 260px;
   object-fit: cover;
+  width: 100%;
 }
 
 .portrait-caption {
-  margin-top: 1.2rem;
+  margin-top: 0.9rem;
   display: flex;
   flex-direction: column;
   gap: 0.3rem;
@@ -462,8 +469,8 @@ h3 {
     gap: 1rem;
   }
 
-  .portrait-frame img {
-    height: 380px;
+  .portrait img {
+    height: 220px;
   }
 
   .story-card {
