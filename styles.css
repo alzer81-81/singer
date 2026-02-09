@@ -93,9 +93,6 @@ h3 {
   font-size: 1.3rem;
   text-transform: uppercase;
   letter-spacing: 0.3rem;
-  display: flex;
-  flex-direction: column;
-  gap: 0.2rem;
 }
 
 .nav-links {
